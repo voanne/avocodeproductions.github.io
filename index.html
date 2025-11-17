@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avocode Productions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Avocode Productions</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Crafting Simple, Smart Digital Experiences</h2>
+      <p>
+        Avocode Productions is a small Canadian software studio focused on intuitive, user-friendly mobile applications.
+      </p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h3>About</h3>
+      <p>
+        Avocode Productions is a federally registered Canadian company
+        dedicated to creating purposeful apps that make everyday life easier.
+        Our current focus is on mobile-first tools that simplify cooking,
+        organization, and daily routines.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="section grey">
+    <div class="container">
+      <h3>Contact</h3>
+      <p>For business inquiries, collaboration, or support:</p>
+      <p><strong>Email:</strong> <a href="mailto:contact@avocodeproductions.com">contact@avocodeproductions.com</a></p>
+      <p><strong>Location:</strong> Mississauga, Ontario, Canada</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Avocode Productions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Auto-update year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
