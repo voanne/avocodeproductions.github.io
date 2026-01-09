@@ -67,42 +67,39 @@
     // Auto-update year
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
+  <script>
+    (function () {
+      const hasAnimated = sessionStorage.getItem("logoAnimated");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      const img = document.querySelector(".logo-img");
+      const text = document.querySelector(".logo-text");
+
+      if (!img || !text) return;
+
+      img.src = prefersDark
+        ? "public/assets/logo/LogoImgDark.png"
+        : "public/assets/logo/LogoImgLight.png";
+
+      text.src = prefersDark
+        ? "public/assets/logo/LogoTxtDark.png"
+        : "public/assets/logo/LogoTxtLight.png";
+
+      if (!hasAnimated) {
+        requestAnimationFrame(() => {
+          img.classList.add("animate");
+          text.classList.add("animate");
+        });
+
+        sessionStorage.setItem("logoAnimated", "true");
+      } else {
+        img.style.opacity = "1";
+        text.style.opacity = "1";
+        img.style.transform = "none";
+        text.style.transform = "none";
+      }
+    })();
+  </script>
 </body>
 </html>
-
-<script>
-  (function () {
-    const hasAnimated = sessionStorage.getItem("logoAnimated");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-    const img = document.querySelector(".logo-img");
-    const text = document.querySelector(".logo-text");
-
-    if (!img || !text) return;
-
-    // Set logo sources based on theme
-    img.src = prefersDark
-      ? "/assets/logo/LogoImgDark.png"
-      : "/assets/logo/LogoImgLight.png";
-
-    text.src = prefersDark
-      ? "/assets/logo/LogoTxtDark.png"
-      : "/assets/logo/LogoTxtLight.png";
-
-    // Animate only once per session
-    if (!hasAnimated) {
-      requestAnimationFrame(() => {
-        img.classList.add("animate");
-        text.classList.add("animate");
-      });
-
-      sessionStorage.setItem("logoAnimated", "true");
-    } else {
-      // Show instantly on repeat visits
-      img.style.opacity = "1";
-      text.style.opacity = "1";
-      img.style.transform = "none";
-      text.style.transform = "none";
-    }
-  })();
-</script>
