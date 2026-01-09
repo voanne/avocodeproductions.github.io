@@ -69,3 +69,50 @@ body {
   text-align: center;
   font-size: 0.9rem;
 }
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Initial hidden state */
+.logo-img,
+.logo-text {
+  opacity: 0;
+  transform: translateY(6px) scale(0.96);
+}
+
+/* Animate in */
+.logo-img.animate {
+  animation: logoImgIn 400ms ease-out forwards;
+}
+
+.logo-text.animate {
+  animation: logoTextIn 400ms ease-out forwards;
+  animation-delay: 120ms;
+}
+
+@keyframes logoImgIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes logoTextIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .logo-img,
+  .logo-text {
+    opacity: 1;
+    transform: none;
+    animation: none !important;
+  }
+}
