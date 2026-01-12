@@ -52,7 +52,7 @@ body {
 .header nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: var(--text-muted);
+  color: var(--link);
   font-weight: 500;
 }
 
