@@ -75,8 +75,18 @@
 
   <script>
     (function () {
-      const hasAnimated = sessionStorage.getItem("logoAnimated");
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute(
+        "data-theme",
+        prefersDark ? "dark" : "light"
+      );
+    })();
+  </script>
+
+  <script>
+    (function () {
+      const hasAnimated = sessionStorage.getItem("logoAnimated");
+      const prefersDark = document.documentElement.getAttribute("data-theme") === "dark";
 
       const img = document.querySelector(".logo-img");
       const text = document.querySelector(".logo-text");
