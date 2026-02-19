@@ -1,7 +1,6 @@
 ---
-layout: page
+layout: none
 title: Privacy Policy – Let Me Cook!
-nav_exclude: true
 ---
 
 # Privacy Policy for Let Me Cook!
