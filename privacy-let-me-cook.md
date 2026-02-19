@@ -1,6 +1,12 @@
+---
+layout: page
+title: Privacy Policy – Let Me Cook!
+nav_exclude: true
+---
+
 # Privacy Policy for Let Me Cook!
 
-### Last updated: 2026
+#### Last updated: 2026
 
 Let Me Cook! respects your privacy.
 
