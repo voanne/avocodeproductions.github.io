@@ -3,8 +3,6 @@ layout: legal
 title: Terms of Service – Let Me Cook!
 ---
 
-# Terms of Service for Let Me Cook!
-
 #### Last updated: 2026
 
 ## 1. Acceptance of Terms

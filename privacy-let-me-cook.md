@@ -3,8 +3,6 @@ layout: legal
 title: Privacy Policy – Let Me Cook!
 ---
 
-# Privacy Policy for Let Me Cook!
-
 #### Last updated: 2026
 
 Let Me Cook! respects your privacy.
