@@ -4,7 +4,7 @@ title: Privacy Policy – Let Me Cook!
 ---
 
 #### Last updated: 2026
-
+<br>
 
 Let Me Cook! respects your privacy.
 

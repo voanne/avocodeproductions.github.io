@@ -4,7 +4,7 @@ title: Terms of Service – Let Me Cook!
 ---
 
 #### Last updated: 2026
-
+<br>
 
 ## 1. Acceptance of Terms
 
