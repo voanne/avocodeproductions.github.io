@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: legal
 title: Privacy Policy – Let Me Cook!
 ---
 
