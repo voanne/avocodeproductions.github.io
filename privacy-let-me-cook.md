@@ -5,6 +5,7 @@ title: Privacy Policy – Let Me Cook!
 
 #### Last updated: 2026
 
+
 Let Me Cook! respects your privacy.
 
 ## Information We Collect
@@ -12,6 +13,7 @@ Let Me Cook! respects your privacy.
 The app may use third-party services that collect limited technical data, including:
 * Firebase (authentication and app functionality)
 * Google AdMob (to display non-personalized advertisements)
+
 
 These services may collect:
 * Device information
